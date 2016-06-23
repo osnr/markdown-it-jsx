@@ -1,0 +1,32 @@
+{
+  "name": "markdown-it-jsx",
+  "version": "1.0.0",
+  "description": "markdown-it plugin for embedding JSX syntax instead of raw HTML.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osnr/markdown-it-jsx.git"
+  },
+  "keywords": [
+    "markdown-it",
+    "markdown",
+    "markdown-it-plugin"
+  ],
+  "author": "Omar Rizwan <omar.rizwan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/osnr/markdown-it-jsx/issues"
+  },
+  "homepage": "https://github.com/osnr/markdown-it-jsx#readme",
+  "devDependencies": {
+    "markdown-it": "^6.1.1",
+    "markdown-it-testgen": "^0.1.4",
+    "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "parsimmon": "^0.7.1"
+  }
+}

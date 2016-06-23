@@ -1,0 +1,17 @@
+---
+desc: Inline JSX
+---
+
+interpolated property
+.
+hello <Foo.Action param={30}>there</Foo.Action>
+.
+<p>hello <Foo.Action param={30}>there</Foo.Action></p>
+.
+
+Markdown inside inline JSX
+.
+hello <Foo>there _friend_!</Foo>
+.
+<p>hello <Foo>there <em>friend</em>!</Foo></p>
+.

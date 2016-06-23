@@ -1,0 +1,52 @@
+---
+desc: Block JSX
+---
+
+interpolated property
+.
+# heading
+test text
+
+<Foo.Component id={"div-id"} />
+
+end text
+.
+<h1>heading</h1>
+<p>test text</p>
+<Foo.Component id={"div-id"} />
+<p>end text</p>
+.
+
+event handler containing angle bracket
+.
+hello
+
+<SomeComponent onClick={function() {
+  if (3 > 0) {
+    console.log('some message');
+  }
+}}/>
+
+there
+.
+<p>hello</p>
+<SomeComponent onClick={function() {
+  if (3 > 0) {
+    console.log('some message');
+  }
+}}/>
+<p>there</p>
+.
+
+child being function
+.
+<Container sends="i">
+  interesting:
+  {i => <div>{i *2* 3}</div>}
+</Container>
+.
+<Container sends="i">
+interesting:
+{i => <div>{i *2* 3}</div>}
+</Container>
+.
