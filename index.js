@@ -13,7 +13,7 @@ module.exports = function jsx_plugin(md) {
 
   md.core.ruler.push('jsx_blockify', function(state) {
     // Look for things like <p><Component> ... </Component></p> and strip the <p>, </p> there.
-    // FIXME Quadratic time, I think?
+    // FIXME Quadratic time in worst case, I think?
     var paragraphTokensToRemove = [];
 
     var lastInlineTokenSeen;
@@ -75,6 +75,8 @@ module.exports = function jsx_plugin(md) {
   });
 
   md.renderer.rules['jsx_inline'] = function(tokens, idx) {
+    // If the span is JSX, just pass the original source for the span
+    // through to output.
     return tokens[idx].content;
   };
 };
