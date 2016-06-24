@@ -1,7 +1,6 @@
 'use strict';
 
 var jsx_inline = require('./lib/jsx_inline');
-var jsx_block = require('./lib/jsx_block');
 
 module.exports = function jsx_plugin(md) {
   md.set({ xhtmlOut: true });
