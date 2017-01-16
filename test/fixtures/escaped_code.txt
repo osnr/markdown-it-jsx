@@ -23,7 +23,6 @@ escaped content of fence
 <MyComponent>{isEscaped(`?!`)}</MyComponent>
 ```
 .
-<pre><code class="language-jsx">{`&lt;MyComponent&gt;{isEscaped(\`?!\`)}&lt;/MyComponent&gt;
+<pre><code className="language-jsx">{`&lt;MyComponent&gt;{isEscaped(\`?!\`)}&lt;/MyComponent&gt;
 `}</code></pre>
 .
-
