@@ -4,7 +4,7 @@
   "description": "markdown-it plugin for embedding JSX syntax instead of raw HTML.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha test/test.js"
   },
   "repository": {
     "type": "git",
