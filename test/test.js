@@ -12,4 +12,5 @@ describe('markdown-it-jsx', function() {
   test('basic.txt');
   test('inline.txt');
   test('block.txt');
+  test('escaped_code.txt');
 });

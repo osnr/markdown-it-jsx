@@ -1,0 +1,29 @@
+---
+desc: code_inline code_block and fence
+---
+
+escaped content of code_inline
+.
+`alert('yay');`
+.
+<p><code>{`alert('yay');`}</code></p>
+.
+
+escaped content of code_block
+.
+    window.location = 'example.org';
+.
+<pre><code>{`window.location = 'example.org';
+`}</code></pre>
+.
+
+escaped content of fence
+.
+```jsx
+<MyComponent>{isEscaped(`?!`)}</MyComponent>
+```
+.
+<pre><code class="language-jsx">{`&lt;MyComponent&gt;{isEscaped(\`?!\`)}&lt;/MyComponent&gt;
+`}</code></pre>
+.
+
