@@ -1,6 +1,7 @@
 'use strict';
 
 var jsx_inline = require('./lib/jsx_inline');
+var escape_code = require('./lib/escape_code');
 
 module.exports = function jsx_plugin(md) {
   md.set({ xhtmlOut: true });
@@ -73,6 +74,10 @@ module.exports = function jsx_plugin(md) {
       return paragraphTokensToRemove.indexOf(idx) === -1;
     });
   });
+
+  md.renderer.rules.fence = escape_code(md.renderer.rules.fence);
+  md.renderer.rules.code_inline = escape_code(md.renderer.rules.code_inline);
+  md.renderer.rules.code_block = escape_code(md.renderer.rules.code_block);
 
   md.renderer.rules['jsx_inline'] = function(tokens, idx) {
     // If the span is JSX, just pass the original source for the span
