@@ -4,7 +4,7 @@
   "description": "markdown-it plugin for embedding JSX syntax instead of raw HTML.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha test/test.js"
   },
   "repository": {
     "type": "git",
@@ -22,15 +22,15 @@
   },
   "homepage": "https://github.com/osnr/markdown-it-jsx#readme",
   "devDependencies": {
-    "babel-core": "^6.10.4",
-    "babel-preset-react": "^6.5.0",
-    "markdown-it": "^6.1.1",
+    "babel-core": "^6.21.0",
+    "babel-preset-react": "^6.16.0",
+    "markdown-it": "^8.2.2",
     "markdown-it-testgen": "^0.1.4",
-    "mocha": "^2.5.3",
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "mocha": "^3.2.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   },
   "dependencies": {
-    "parsimmon": "^0.7.1"
+    "parsimmon": "^1.2.0"
   }
 }
