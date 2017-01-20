@@ -90,6 +90,13 @@ and end, we remove the paragraph open and end, effectively promoting
 the JSX inside. Again, not really correct, and will treat some things
 differently from CommonMark spec, but good enough.
 
+## Changelog
+
+- 1.1.0: Merged PRs from Xiphe: update dependencies, treat contents of
+  backtick code inlines/fenced blocks as literal JS strings (so braces
+  aren't annoying in code samples, for example).
+- 1.0.0: Initial release.
+
 ## See also
 
 Similar things and classes of things:
@@ -113,6 +120,10 @@ Similar things and classes of things:
   and some others provide a React component that renders children or
   props as React components. Again, can't actually embed custom tags
   in the Markdown.
+- [markdown-component-loader](https://www.npmjs.com/package/markdown-component-loader)
+  (recent) looks pretty good at a glance. Slightly heavier
+  double-brace syntax. Also, a Webpack loader, so very build-system-y
+  instead of just being a markdown-it plugin?
 
 Things I wanted from this syntax extension:
 
@@ -122,4 +133,3 @@ Things I wanted from this syntax extension:
 - Use standard JSX syntax inside Markdown document.
 - Statically compile Markdown+JSX source to JavaScript React component
   source.
-
