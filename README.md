@@ -53,6 +53,8 @@ prints this JSX output
 <p>Some {"[link](/link)"} that will not be rendered.</p>
 ```
 
+**[Run example](https://codesandbox.io/s/xjykoj0vmq)**.
+
 which isn't quite a valid JSX expression, but will
 be if you wrap it in an outer `<div>` and `</div>`.
 
