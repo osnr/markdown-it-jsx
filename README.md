@@ -37,6 +37,9 @@ Two times three is <Doubler>{3}</Doubler>.
 We can <em>intermix **Markdown** and JSX.</em>
 
 The current date is {new Date().toString()}.
+
+Some {"[link](/link)"} that will not be rendered.
+
 `));
 ```
 
@@ -47,6 +50,7 @@ prints this JSX output
 <p>Two times three is <Doubler>{3}</Doubler>.</p>
 <p>We can <em>intermix <strong>Markdown</strong> and JSX.</em></p>
 <p>The current date is {new Date().toString()}.</p>
+<p>Some {"[link](/link)"} that will not be rendered.</p>
 ```
 
 which isn't quite a valid JSX expression, but will
