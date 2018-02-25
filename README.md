@@ -18,8 +18,8 @@ etc); instead, it'll have to be rendered by React first.*
 
 ## Install
 
-```
-$ npm install markdown-it markdown-it-jsx --save
+```sh
+npm i markdown-it markdown-it-jsx
 ```
 
 ## Use
