@@ -25,8 +25,8 @@ $ npm install markdown-it markdown-it-jsx --save
 ## Use
 
 ```javascript
-var md = require('markdown-it')();
-var jsx = require('markdown-it-jsx');
+const md = require('markdown-it')();
+const jsx = require('markdown-it-jsx');
 md.use(jsx);
 
 console.log(md.render(`
